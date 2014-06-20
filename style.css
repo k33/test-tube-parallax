@@ -1,26 +1,28 @@
 body {
-    height: 4000px;
+  height: 4000px;
 }
 
 /* Adding animation to keyframes: https://github.com/Prinzhorn/skrollr-stylesheets */
 #fx-title {
-    position: fixed;
+  position: fixed;
 
-    /* naming the animation element */
-    -skrollr-animation-name:fxTitle;
+  /* naming the animation element */
+  -skrollr-animation-name:fxTitle;
 }
 
 @-skrollr-keyframes fxTitle {
-    /* for the animation element fxTitle at scroll bar possition 0px */
-    0 {
-        font-size: 400px;
+  
+  /* for the animation element fxTitle at scroll bar possition 0px */
+  0 {
+    font-size: 20px;
 
-        transform:rotate(0deg);
-    }
-    /* for the animation element fxTitle at scroll bar possition 2000px */
-    2000 {
-        font-size: 20px;
+    transform:skew(0deg) scale(0.5,0.5) rotate(0deg) translate(0px, 0px);
+  }
+  
+  /* for the animation element fxTitle at scroll bar possition 2000px */
+  2000 {
+    font-size: 300px;
 
-        transform:rotate(180deg);
-    }
+    transform:skew(30deg) scale(2.1,2.1) rotate(180deg) translate(30px, 20px);
+  }
 }

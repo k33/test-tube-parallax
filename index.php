@@ -19,7 +19,7 @@
   <!-- add id for mobile support - https://github.com/Prinzhorn/skrollr#mobile-support -->
   <body id="skrollr-body">
     
-    <h1 id="fx-title">this is a title that will change size</h1>
+    <h1 id="fx-title">this is a title that will skew, scale, rotate and translate on scroll</h1>
     
     <!-- External scripts -->
 
