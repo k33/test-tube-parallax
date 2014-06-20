@@ -1,0 +1,22 @@
+body {
+    height: 4000px;
+}
+
+/* Adding animation to keyframes: https://github.com/Prinzhorn/skrollr-stylesheets */
+#fx-title {
+    position: fixed;
+
+    /* naming the animation element */
+    -skrollr-animation-name:fxTitle;
+}
+
+@-skrollr-keyframes fxTitle {
+    /* for the animation element fxTitle at scroll bar possition 0px */
+    0 {
+        font-size: 400px;
+    }
+    /* for the animation element fxTitle at scroll bar possition 2000px */
+    2000 {
+        font-size: 20px;
+    }
+}
